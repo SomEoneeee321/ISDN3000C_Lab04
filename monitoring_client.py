@@ -3,7 +3,7 @@ import time
 import json
 
 # --- TODO: Configure these values --- #
-SERVER_IP = '192.168.127.10'  # The IP address of your RDK-X5
+SERVER_IP = '192.168.50.95'  # The IP address of your RDK-X5
 SERVER_PORT = 9999
 REQUEST_MESSAGE = "GET_DATA" # The message your server expects
 # --- END OF TODO --- #
@@ -46,7 +46,7 @@ def run_client():
                 else:
                     print(data)
             # --- END OF TODO --- #
-            
+
         except ConnectionRefusedError:
             print("Connection failed. Is the server running?")
         except Exception as e:
